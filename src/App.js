@@ -1,9 +1,10 @@
 import React from 'react';
-import HelloWorld from './components/HelloWorld';
-import Counter from './components/Counter';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from './components/Header';
 import Footer from './components/Footer';
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import Home from './Views/Home';
+import AboutUs from './Views/AboutUs';
+
 
 
 function App() {
@@ -11,18 +12,17 @@ function App() {
     <div>
       <Router>
         <Header/>
-        <HelloWorld name = "ZShaan0"/>
 
-        <Routes>
-          <Route exact path='/'
-            element={<h1 className='font-bold text-2xl'>This is the home page</h1>} />
+        <div className="p-3">
+          <Routes>
+            <Route exact path='/'
+              element={<Home />} />
 
-          <Route path='/about-us'
-          element={<h1 className="text-xl">This is the About Us page</h1>} />
-        </Routes>
+            <Route path='/about-us'
+            element={<AboutUs />} />
+          </Routes>
+        </div>
 
-
-        <Counter/>
         <Footer/>
       </Router>
     </div>
@@ -30,4 +30,5 @@ function App() {
 }
 
 export default App;
+
 
