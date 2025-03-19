@@ -3,10 +3,10 @@ import React from "react";
 function AboutUs(){
     return (
         <div>
-            <h1 className="font-bold text-xl mb-3">This is the About Us page</h1>
+            <h1 className="font-bold text-xl mb-3">About Us</h1>
 
             <p>
-                This is my first project in react. <br/> I am experimenting using JavaScript,
+                This is my first project in React. <br/> I am experimenting using JavaScript,
                 HTML, CSS (TailwindCSS) and React (with ReactRouter, FontAwesome).
             </p>
             <br/>

@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './Views/Home';
 import AboutUs from './Views/AboutUs';
-
+import DandD from './Views/DandD';
 
 
 function App() {
@@ -20,6 +20,9 @@ function App() {
 
             <Route path='/about-us'
             element={<AboutUs />} />
+
+            <Route path='/DandD'
+            element={<DandD />} />
           </Routes>
         </div>
 

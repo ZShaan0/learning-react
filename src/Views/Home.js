@@ -7,6 +7,7 @@ function Home(){
             <h1 className='font-bold text-xl mb-3'>This is the home page</h1>
 
             <HelloWorld name="ZShaan0" />
+
         </div>
     )
 }
